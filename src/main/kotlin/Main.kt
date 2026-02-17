@@ -3,9 +3,11 @@ import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
     if (args.isEmpty() || args[0] != "words") {
-        println("Usage: app words [filePath]")
+        println("Usage: app words [--limit <number>] [filePath]")
         println("Commands:")
         println("  words - count words in text")
+        println("Options:")
+        println("  --limit <number> - stop counting after specified number of words")
         exitProcess(1)
     }
     
@@ -13,9 +15,32 @@ fun main(args: Array<String>) {
     
     when (command) {
         "words" -> {
-            val text = if (args.size > 1) {
+            var limit: Int? = null
+            var filePathIndex = 1
+            
+            // Parse --limit parameter
+            if (args.size > 1 && args[1] == "--limit") {
+                if (args.size > 2) {
+                    try {
+                        limit = args[2].toInt()
+                        if (limit <= 0) {
+                            println("Error: Limit must be a positive number")
+                            exitProcess(1)
+                        }
+                        filePathIndex = 3
+                    } catch (e: NumberFormatException) {
+                        println("Error: Invalid limit value. Must be a number.")
+                        exitProcess(1)
+                    }
+                } else {
+                    println("Error: --limit requires a value")
+                    exitProcess(1)
+                }
+            }
+            
+            val text = if (args.size > filePathIndex) {
                 // Read from file
-                val filePath = args[1]
+                val filePath = args[filePathIndex]
                 try {
                     File(filePath).readText()
                 } catch (e: Exception) {
@@ -27,15 +52,26 @@ fun main(args: Array<String>) {
                 generateSequence(::readlnOrNull).joinToString("\n")
             }
             
-            val wordCount = countWords(text)
-            println("Words: $wordCount")
+            val result = countWordsWithLimit(text, limit)
+            if (result.exceededLimit) {
+                println("Words: more than $limit")
+            } else {
+                println("Words: ${result.count}")
+            }
         }
     }
 }
 
-fun countWords(text: String): Int {
-    return text.trim()
+data class WordCountResult(val count: Int, val exceededLimit: Boolean)
+
+fun countWordsWithLimit(text: String, limit: Int?): WordCountResult {
+    val words = text.trim()
         .split(Regex("\\s+"))
         .filter { it.isNotEmpty() }
-        .size
+    
+    if (limit != null && words.size > limit) {
+        return WordCountResult(limit, true)
+    }
+    
+    return WordCountResult(words.size, false)
 }
