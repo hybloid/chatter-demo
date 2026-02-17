@@ -85,3 +85,9 @@ fun countWordsWithLimit(text: String, limit: Int?): WordCountResult {
     
     return WordCountResult(words.size, false)
 }
+
+val ASCII_RABBIT = """
+   (\(\
+   ( -.-)
+   o_(")(")
+""".trimIndent()
