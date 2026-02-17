@@ -18,6 +18,7 @@ fun main(args: Array<String>) {
         println("  words - count words in text")
         println("Options:")
         println("  --limit <number> - stop counting after specified number of words")
+        println("Note: Words are separated by whitespace (spaces, tabs, newlines)")
         exitProcess(1)
     }
     
