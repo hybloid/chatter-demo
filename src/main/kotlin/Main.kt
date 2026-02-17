@@ -1,8 +1,18 @@
 import java.io.File
 import kotlin.system.exitProcess
 
+val ASCII_KITTENS = """
+    /\_/\     /\_/\     /\_/\
+   ( o.o )   ( ^.^ )   ( >.< )
+    > ^ <     > ^ <     > ^ <
+   /|   |\   /|   |\   /|   |\
+  (_|   |_) (_|   |_) (_|   |_)
+""".trimIndent()
+
 fun main(args: Array<String>) {
     if (args.isEmpty() || args[0] != "words") {
+        println(ASCII_KITTENS)
+        println()
         println("Usage: app words [--limit <number>] [filePath]")
         println("Commands:")
         println("  words - count words in text")
