@@ -107,6 +107,10 @@ The project uses Clikt's subcommand architecture, where each command (`words`, `
     (\(\
     ( -.-)
     o_(")(")
+
+    (\(\
+    ( -.-)
+    o_(")(")
 ```
 That's all folks!
 Have fun!
