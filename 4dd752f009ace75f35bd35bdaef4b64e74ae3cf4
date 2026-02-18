@@ -1,0 +1,99 @@
+{
+    "version": "0.1.0",
+    "id": "0a1b9a1a-dd03-4795-9f92-051e9d520612",
+    "timestamp": "2026-02-17T10:39:28.889529Z",
+    "vcs": {
+        "type": "git",
+        "revision": "4dd752f009ace75f35bd35bdaef4b64e74ae3cf4",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "build.gradle.kts",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:8bb5058663dbba1efc27c41b6a923ee3d1ffc907",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 22
+                        },
+                        {
+                            "start_line": 25,
+                            "end_line": 36
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "settings.gradle.kts",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:8bb5058663dbba1efc27c41b6a923ee3d1ffc907",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:8bb5058663dbba1efc27c41b6a923ee3d1ffc907",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 16
+                        },
+                        {
+                            "start_line": 18,
+                            "end_line": 25
+                        },
+                        {
+                            "start_line": 27,
+                            "end_line": 40
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "test.txt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:8bb5058663dbba1efc27c41b6a923ee3d1ffc907",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
