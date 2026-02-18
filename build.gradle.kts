@@ -12,7 +12,9 @@ repositories {
 
 dependencies {
     implementation("com.github.ajalt.clikt:clikt:4.2.1")
+    implementation("com.google.guava:guava:33.0.0-jre")
     testImplementation(kotlin("test"))
+    testImplementation("org.assertj:assertj-core:3.25.1")
 }
 
 tasks.test {
