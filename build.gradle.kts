@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "2.1.0"
     application
 }
 
@@ -11,6 +11,7 @@ repositories {
 }
 
 dependencies {
+    implementation("com.github.ajalt.clikt:clikt:4.2.1")
     testImplementation(kotlin("test"))
 }
 
