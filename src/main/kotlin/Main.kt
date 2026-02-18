@@ -13,6 +13,8 @@ val ASCII_KITTENS = """
 
 fun summonCodeGoblin(): String = "The code goblin reviewed your PR and demanded exactly 17 snacks."
 
+fun askRubberDuckForHelp(): String = "The rubber duck said: 'Try turning your bugs off and on again.'"
+
 class TextStats : CliktCommand(
     name = "text-stats",
     help = "A tool for analyzing text statistics",
