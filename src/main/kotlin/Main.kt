@@ -1,5 +1,12 @@
+import com.github.ajalt.clikt.core.CliktCommand
+import com.github.ajalt.clikt.core.subcommands
+import com.github.ajalt.clikt.parameters.arguments.argument
+import com.github.ajalt.clikt.parameters.arguments.optional
+import com.github.ajalt.clikt.parameters.options.default
+import com.github.ajalt.clikt.parameters.options.option
+import com.github.ajalt.clikt.parameters.types.int
+import com.github.ajalt.clikt.parameters.types.file
 import java.io.File
-import kotlin.system.exitProcess
 
 val ASCII_KITTENS = """
     /\_/\     /\_/\     /\_/\
@@ -9,142 +16,107 @@ val ASCII_KITTENS = """
   (_|   |_) (_|   |_) (_|   |_)
 """.trimIndent()
 
-fun main(args: Array<String>) {
-    if (args.isEmpty() || (args[0] != "words" && args[0] != "lines")) {
-        println(ASCII_KITTENS)
-        println()
-        println("Usage: app <command> [options] [filePath]")
-        println("Commands:")
-        println("  words - count words in text")
-        println("  lines - count lines in text")
-        println("Options:")
-        println("  --limit <number> - stop counting after specified number")
-        println("Note: Words are separated by whitespace (spaces, tabs, newlines)")
-        exitProcess(1)
-    }
-
-    val command = args[0]
-
-    when (command) {
-        "lines" -> {
-            var limit: Int? = null
-            var filePathIndex = 1
-
-            // Parse --limit parameter
-            if (args.size > 1 && args[1] == "--limit") {
-                if (args.size > 2) {
-                    try {
-                        limit = args[2].toInt()
-                        if (limit <= 0) {
-                            println("Error: Limit must be a positive number")
-                            exitProcess(1)
-                        }
-                        filePathIndex = 3
-                    } catch (e: NumberFormatException) {
-                        println("Error: Invalid limit value. Must be a number.")
-                        exitProcess(1)
-                    }
-                } else {
-                    println("Error: --limit requires a value")
-                    exitProcess(1)
-                }
-            }
-
-            val text = if (args.size > filePathIndex) {
-                // Read from file
-                val filePath = args[filePathIndex]
-                try {
-                    File(filePath).readText()
-                } catch (e: Exception) {
-                    println("Error reading file: ${e.message}")
-                    exitProcess(1)
-                }
-            } else {
-                // Read from stdin
-                generateSequence(::readlnOrNull).joinToString("\n")
-            }
-
-            val result = countLinesWithLimit(text, limit)
-            if (result.exceededLimit) {
-                println("Lines: more than $limit")
-            } else {
-                println("Lines: ${result.count}")
-            }
-        }
-        "words" -> {
-            var limit: Int? = null
-            var filePathIndex = 1
-            
-            // Parse --limit parameter
-            if (args.size > 1 && args[1] == "--limit") {
-                if (args.size > 2) {
-                    try {
-                        limit = args[2].toInt()
-                        if (limit <= 0) {
-                            println("Error: Limit must be a positive number")
-                            exitProcess(1)
-                        }
-                        filePathIndex = 3
-                    } catch (e: NumberFormatException) {
-                        println("Error: Invalid limit value. Must be a number.")
-                        exitProcess(1)
-                    }
-                } else {
-                    println("Error: --limit requires a value")
-                    exitProcess(1)
-                }
-            }
-            
-            val text = if (args.size > filePathIndex) {
-                // Read from file
-                val filePath = args[filePathIndex]
-                try {
-                    File(filePath).readText()
-                } catch (e: Exception) {
-                    println("Error reading file: ${e.message}")
-                    exitProcess(1)
-                }
-            } else {
-                // Read from stdin
-                generateSequence(::readlnOrNull).joinToString("\n")
-            }
-            
-            val result = countWordsWithLimit(text, limit)
-            if (result.exceededLimit) {
-                println("Words: more than $limit")
-            } else {
-                println("Words: ${result.count}")
-            }
-        }
-    }
-}
-
-data class WordCountResult(val count: Int, val exceededLimit: Boolean)
-
-fun countWordsWithLimit(text: String, limit: Int?): WordCountResult {
-    val words = text.trim()
-        .split(Regex("\\s+"))
-        .filter { it.isNotEmpty() }
-
-    if (limit != null && words.size > limit) {
-        return WordCountResult(limit, true)
-    }
-
-    return WordCountResult(words.size, false)
-}
-
-fun countLinesWithLimit(text: String, limit: Int?): WordCountResult {
-    val lines = text.split("\n")
-
-    if (limit != null && lines.size > limit) {
-        return WordCountResult(limit, true)
-    }
-
-    return WordCountResult(lines.size, false)
-}
-
 val ASCII_RABBIT = """
    (\(\
    ( -.-)
    o_(")(")
 """.trimIndent()
+
+data class CountResult(val count: Int, val exceededLimit: Boolean)
+
+class TextStats : CliktCommand(
+    name = "text-stats",
+    help = "A tool for analyzing text statistics",
+    epilog = ASCII_KITTENS,
+    invokeWithoutSubcommand = false
+) {
+    override fun run() {
+        // Parent command just sets up the context
+    }
+}
+
+class WordsCommand : CliktCommand(
+    name = "words",
+    help = "Count words in text (words are separated by whitespace)"
+) {
+    private val limit by option("--limit", "-l", help = "Stop counting after specified number")
+        .int()
+
+    private val file by argument(help = "File path to analyze (reads from stdin if not provided)")
+        .file(mustExist = true, canBeDir = false)
+        .optional()
+
+    override fun run() {
+        val text = file?.readText() ?: generateSequence(::readlnOrNull).joinToString("\n")
+
+        limit?.let {
+            if (it <= 0) {
+                echo("Error: Limit must be a positive number", err = true)
+                throw com.github.ajalt.clikt.core.Abort()
+            }
+        }
+
+        val result = countWordsWithLimit(text, limit)
+        if (result.exceededLimit) {
+            echo("Words: more than $limit")
+        } else {
+            echo("Words: ${result.count}")
+        }
+    }
+
+    private fun countWordsWithLimit(text: String, limit: Int?): CountResult {
+        val words = text.trim()
+            .split(Regex("\\s+"))
+            .filter { it.isNotEmpty() }
+
+        if (limit != null && words.size > limit) {
+            return CountResult(limit, true)
+        }
+
+        return CountResult(words.size, false)
+    }
+}
+
+class LinesCommand : CliktCommand(
+    name = "lines",
+    help = "Count lines in text"
+) {
+    private val limit by option("--limit", "-l", help = "Stop counting after specified number")
+        .int()
+
+    private val file by argument(help = "File path to analyze (reads from stdin if not provided)")
+        .file(mustExist = true, canBeDir = false)
+        .optional()
+
+    override fun run() {
+        val text = file?.readText() ?: generateSequence(::readlnOrNull).joinToString("\n")
+
+        limit?.let {
+            if (it <= 0) {
+                echo("Error: Limit must be a positive number", err = true)
+                throw com.github.ajalt.clikt.core.Abort()
+            }
+        }
+
+        val result = countLinesWithLimit(text, limit)
+        if (result.exceededLimit) {
+            echo("Lines: more than $limit")
+        } else {
+            echo("Lines: ${result.count}")
+        }
+    }
+
+    private fun countLinesWithLimit(text: String, limit: Int?): CountResult {
+        val lines = text.split("\n")
+
+        if (limit != null && lines.size > limit) {
+            return CountResult(limit, true)
+        }
+
+        return CountResult(lines.size, false)
+    }
+}
+
+fun main(args: Array<String>) = TextStats()
+    .subcommands(WordsCommand(), LinesCommand())
+    .main(args)
