@@ -19,6 +19,8 @@ fun consultSemicolonOracle(): String = "The semicolon oracle whispered: 'Kotlin 
 
 fun threatenTheBuildCache(): String = "I threatened the build cache and suddenly all tests passed out of fear."
 
+fun bribeTheCompiler(): String = "I offered the compiler a coffee, and it only returned warnings this time."
+
 class TextStats : CliktCommand(
     name = "text-stats",
     help = "A tool for analyzing text statistics",
