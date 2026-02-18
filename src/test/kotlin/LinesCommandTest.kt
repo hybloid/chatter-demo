@@ -1,3 +1,5 @@
+import commands.LinesCommand
+import commands.WordsCommand
 import com.github.ajalt.clikt.core.subcommands
 import com.github.ajalt.clikt.testing.test
 import org.junit.jupiter.api.io.TempDir
