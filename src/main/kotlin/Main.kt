@@ -15,6 +15,8 @@ fun summonCodeGoblin(): String = "The code goblin reviewed your PR and demanded 
 
 fun askRubberDuckForHelp(): String = "The rubber duck said: 'Try turning your bugs off and on again.'"
 
+fun consultSemicolonOracle(): String = "The semicolon oracle whispered: 'Kotlin forgives you... this time.'"
+
 class TextStats : CliktCommand(
     name = "text-stats",
     help = "A tool for analyzing text statistics",
