@@ -13,6 +13,8 @@ fun main(args: Array<String>) {
     if (args.isEmpty() || (args[0] != "words" && args[0] != "lines")) {
         println(ASCII_KITTENS)
         println()
+        println("Debug fortune: ${summonDebugFortune()}")
+        println()
         println("Usage: app <command> [options] [filePath]")
         println("Commands:")
         println("  words - count words in text")
@@ -148,3 +150,15 @@ val ASCII_RABBIT = """
    ( -.-)
    o_(")(")
 """.trimIndent()
+
+fun summonDebugFortune(): String {
+    val fortunes = listOf(
+        "Your bug is 95% solved; the remaining 5% is vibes.",
+        "Try turning it off and on again, then pretending that was the plan.",
+        "A wild semicolon appears... and immediately flees Kotlin.",
+        "The code works. Nobody knows why. Ship it carefully."
+    )
+
+    val index = ((System.nanoTime() and Long.MAX_VALUE) % fortunes.size).toInt()
+    return fortunes[index]
+}
