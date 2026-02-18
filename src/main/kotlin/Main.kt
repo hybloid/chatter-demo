@@ -21,6 +21,8 @@ fun threatenTheBuildCache(): String = "I threatened the build cache and suddenly
 
 fun bribeTheCompiler(): String = "I offered the compiler a coffee, and it only returned warnings this time."
 
+fun debugByInterpretiveDance(): String = "I fixed the bug with interpretive dance; now the stack trace applauds."
+
 class TextStats : CliktCommand(
     name = "text-stats",
     help = "A tool for analyzing text statistics",
