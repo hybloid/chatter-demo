@@ -11,6 +11,8 @@ val ASCII_KITTENS = """
   (_|   |_) (_|   |_) (_|   |_)
 """.trimIndent()
 
+fun summonCodeGoblin(): String = "The code goblin reviewed your PR and demanded exactly 17 snacks."
+
 class TextStats : CliktCommand(
     name = "text-stats",
     help = "A tool for analyzing text statistics",
