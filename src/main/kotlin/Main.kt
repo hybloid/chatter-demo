@@ -23,6 +23,8 @@ fun bribeTheCompiler(): String = "I offered the compiler a coffee, and it only r
 
 fun debugByInterpretiveDance(): String = "I fixed the bug with interpretive dance; now the stack trace applauds."
 
+fun refactorAt2AM(): String = "I refactored at 2 AM and invented three new bugs with premium features."
+
 class TextStats : CliktCommand(
     name = "text-stats",
     help = "A tool for analyzing text statistics",
