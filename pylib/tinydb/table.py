@@ -25,6 +25,8 @@ from .queries import QueryLike
 from .storages import Storage
 from .utils import LRUCache
 
+from .events import emit
+
 __all__ = ('Document', 'Table')
 
 
@@ -150,6 +152,8 @@ class Table:
         :param document: the document to insert
         :returns: the inserted document's ID
         """
+
+        emit('table:insert', name=self.name)
 
         # Make sure the document implements the ``Mapping`` interface
         if not isinstance(document, Mapping):
@@ -388,6 +392,8 @@ class Table:
         :returns: a list containing the updated document's ID
         """
 
+        emit('table:update', name=self.name)
+
         # Define the function that will perform the update
         if callable(fields):
             def perform_update(table, doc_id):
@@ -568,6 +574,8 @@ class Table:
         :param doc_ids: a list of document IDs
         :returns: a list containing the removed documents' ID
         """
+        emit('table:remove', name=self.name)
+
         if doc_ids is not None:
             # This function returns the list of IDs for the documents that have
             # been removed. When removing documents identified by a set of
@@ -623,6 +631,8 @@ class Table:
         """
         Truncate the table by removing all documents.
         """
+
+        emit('table:truncate', name=self.name)
 
         # Update the table by resetting all data
         self._update_table(lambda table: table.clear())
