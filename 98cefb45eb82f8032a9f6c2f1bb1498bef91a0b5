@@ -1,0 +1,69 @@
+{
+    "version": "0.1",
+    "id": "6f6659c3-83dc-4626-9d19-33fdea592a4e",
+    "timestamp": "2026-07-12T22:28:45.119948Z",
+    "vcs": {
+        "type": "git",
+        "revision": "98cefb45eb82f8032a9f6c2f1bb1498bef91a0b5"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "pylib/tinydb/__init__.py",
+            "conversations": [
+                {
+                    "url": "3b4b6ac5-ecbd-41b6-88c2-52741c6ea20b",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 32,
+                            "end_line": 35
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "pylib/tinydb/table.py",
+            "conversations": [
+                {
+                    "url": "3b4b6ac5-ecbd-41b6-88c2-52741c6ea20b",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 23,
+                            "end_line": 23
+                        },
+                        {
+                            "start_line": 151,
+                            "end_line": 151
+                        },
+                        {
+                            "start_line": 390,
+                            "end_line": 390
+                        },
+                        {
+                            "start_line": 573,
+                            "end_line": 573
+                        },
+                        {
+                            "start_line": 631,
+                            "end_line": 632
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
