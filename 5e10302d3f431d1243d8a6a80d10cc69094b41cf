@@ -1,0 +1,126 @@
+{
+    "version": "0.1",
+    "id": "8158e14a-29fa-4da0-9e75-d64a4b2d6e64",
+    "timestamp": "2026-07-12T22:20:20.838989Z",
+    "vcs": {
+        "type": "git",
+        "revision": "5e10302d3f431d1243d8a6a80d10cc69094b41cf"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "pylib/tinydb/__init__.py",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 29
+                        },
+                        {
+                            "start_line": 31,
+                            "end_line": 32
+                        }
+                    ]
+                },
+                {
+                    "url": "d3ff2707-4d42-41bc-b1ae-045766e52a2a",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 30,
+                            "end_line": 30
+                        },
+                        {
+                            "start_line": 33,
+                            "end_line": 34
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "pylib/tinydb/table.py",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 21
+                        },
+                        {
+                            "start_line": 23,
+                            "end_line": 149
+                        },
+                        {
+                            "start_line": 151,
+                            "end_line": 388
+                        },
+                        {
+                            "start_line": 390,
+                            "end_line": 571
+                        },
+                        {
+                            "start_line": 573,
+                            "end_line": 629
+                        },
+                        {
+                            "start_line": 632,
+                            "end_line": 783
+                        }
+                    ]
+                },
+                {
+                    "url": "d3ff2707-4d42-41bc-b1ae-045766e52a2a",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 22,
+                            "end_line": 22
+                        },
+                        {
+                            "start_line": 150,
+                            "end_line": 150
+                        },
+                        {
+                            "start_line": 389,
+                            "end_line": 389
+                        },
+                        {
+                            "start_line": 572,
+                            "end_line": 572
+                        },
+                        {
+                            "start_line": 630,
+                            "end_line": 631
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "dev.agent_trace.git": {
+            "previous_revisions": [
+                "a58d4c5771cbfec6138e78694d890b6eb042ae1e"
+            ]
+        }
+    }
+}
