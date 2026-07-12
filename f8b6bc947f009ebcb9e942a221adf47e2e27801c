@@ -1,7 +1,7 @@
 {
     "version": "0.1",
-    "id": "1deb68cd-5001-4d90-977a-97e4146c1ebf",
-    "timestamp": "2026-07-12T20:54:27.349131Z",
+    "id": "fac246e0-8998-4bbf-82b8-1be42d8d9a04",
+    "timestamp": "2026-07-12T20:54:10.753616Z",
     "vcs": {
         "type": "git",
         "revision": "f8b6bc947f009ebcb9e942a221adf47e2e27801c"
@@ -21,18 +21,18 @@
                     "ranges": [
                         {
                             "start_line": 1,
-                            "end_line": 31
+                            "end_line": 29
                         },
                         {
-                            "start_line": 33,
-                            "end_line": 43
+                            "start_line": 31,
+                            "end_line": 41
                         },
                         {
-                            "start_line": 45,
-                            "end_line": 112
+                            "start_line": 43,
+                            "end_line": 85
                         },
                         {
-                            "start_line": 127,
+                            "start_line": 112,
                             "end_line": 127
                         }
                     ]
@@ -46,16 +46,16 @@
                     },
                     "ranges": [
                         {
-                            "start_line": 32,
-                            "end_line": 32
+                            "start_line": 30,
+                            "end_line": 30
                         },
                         {
-                            "start_line": 44,
-                            "end_line": 44
+                            "start_line": 42,
+                            "end_line": 42
                         },
                         {
-                            "start_line": 113,
-                            "end_line": 126
+                            "start_line": 86,
+                            "end_line": 111
                         }
                     ]
                 }
@@ -65,7 +65,7 @@
     "metadata": {
         "dev.agent_trace.git": {
             "previous_revisions": [
-                "dedc601cbdf9b031d0bf6d76657abad5a430e3da"
+                "9455a9763b95e984ce2a960b48bcaac2723fcd4f"
             ]
         }
     }
