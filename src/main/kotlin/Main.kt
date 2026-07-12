@@ -29,19 +29,7 @@ fun main(args: Array<String>) {
         "lines" -> {
             val (limit, filePathIndex) = parseLimitOption(args)
 
-            val text = if (args.size > filePathIndex) {
-                // Read from file
-                val filePath = args[filePathIndex]
-                try {
-                    File(filePath).readText()
-                } catch (e: Exception) {
-                    println("Error reading file: ${e.message}")
-                    exitProcess(1)
-                }
-            } else {
-                // Read from stdin
-                generateSequence(::readlnOrNull).joinToString("\n")
-            }
+            val text = readInputText(args, filePathIndex)
 
             val result = countLinesWithLimit(text, limit)
             if (result.exceededLimit) {
@@ -53,20 +41,8 @@ fun main(args: Array<String>) {
         "words" -> {
             val (limit, filePathIndex) = parseLimitOption(args)
 
-            val text = if (args.size > filePathIndex) {
-                // Read from file
-                val filePath = args[filePathIndex]
-                try {
-                    File(filePath).readText()
-                } catch (e: Exception) {
-                    println("Error reading file: ${e.message}")
-                    exitProcess(1)
-                }
-            } else {
-                // Read from stdin
-                generateSequence(::readlnOrNull).joinToString("\n")
-            }
-            
+            val text = readInputText(args, filePathIndex)
+
             val result = countWordsWithLimit(text, limit)
             if (result.exceededLimit) {
                 println("Words: more than $limit")
@@ -134,4 +110,22 @@ fun parseLimitOption(args: Array<String>): Pair<Int?, Int> {
     }
 
     return Pair(limit, filePathIndex)
+}
+
+// Read the input text from the file at filePathIndex, or from stdin when no
+// file path argument is present.
+fun readInputText(args: Array<String>, filePathIndex: Int): String {
+    return if (args.size > filePathIndex) {
+        // Read from file
+        val filePath = args[filePathIndex]
+        try {
+            File(filePath).readText()
+        } catch (e: Exception) {
+            println("Error reading file: ${e.message}")
+            exitProcess(1)
+        }
+    } else {
+        // Read from stdin
+        generateSequence(::readlnOrNull).joinToString("\n")
+    }
 }
