@@ -27,28 +27,7 @@ fun main(args: Array<String>) {
 
     when (command) {
         "lines" -> {
-            var limit: Int? = null
-            var filePathIndex = 1
-
-            // Parse --limit parameter
-            if (args.size > 1 && args[1] == "--limit") {
-                if (args.size > 2) {
-                    try {
-                        limit = args[2].toInt()
-                        if (limit <= 0) {
-                            println("Error: Limit must be a positive number")
-                            exitProcess(1)
-                        }
-                        filePathIndex = 3
-                    } catch (e: NumberFormatException) {
-                        println("Error: Invalid limit value. Must be a number.")
-                        exitProcess(1)
-                    }
-                } else {
-                    println("Error: --limit requires a value")
-                    exitProcess(1)
-                }
-            }
+            val (limit, filePathIndex) = parseLimitOption(args)
 
             val text = if (args.size > filePathIndex) {
                 // Read from file
@@ -72,29 +51,8 @@ fun main(args: Array<String>) {
             }
         }
         "words" -> {
-            var limit: Int? = null
-            var filePathIndex = 1
-            
-            // Parse --limit parameter
-            if (args.size > 1 && args[1] == "--limit") {
-                if (args.size > 2) {
-                    try {
-                        limit = args[2].toInt()
-                        if (limit <= 0) {
-                            println("Error: Limit must be a positive number")
-                            exitProcess(1)
-                        }
-                        filePathIndex = 3
-                    } catch (e: NumberFormatException) {
-                        println("Error: Invalid limit value. Must be a number.")
-                        exitProcess(1)
-                    }
-                } else {
-                    println("Error: --limit requires a value")
-                    exitProcess(1)
-                }
-            }
-            
+            val (limit, filePathIndex) = parseLimitOption(args)
+
             val text = if (args.size > filePathIndex) {
                 // Read from file
                 val filePath = args[filePathIndex]
@@ -148,3 +106,32 @@ val ASCII_RABBIT = """
    ( -.-)
    o_(")(")
 """.trimIndent()
+
+data class LimitParseResult(val limit: Int?, val filePathIndex: Int)
+
+fun parseLimitOption(args: Array<String>): LimitParseResult {
+    var limit: Int? = null
+    var filePathIndex = 1
+
+    // Parse --limit parameter
+    if (args.size > 1 && args[1] == "--limit") {
+        if (args.size > 2) {
+            try {
+                limit = args[2].toInt()
+                if (limit <= 0) {
+                    println("Error: Limit must be a positive number")
+                    exitProcess(1)
+                }
+                filePathIndex = 3
+            } catch (e: NumberFormatException) {
+                println("Error: Invalid limit value. Must be a number.")
+                exitProcess(1)
+            }
+        } else {
+            println("Error: --limit requires a value")
+            exitProcess(1)
+        }
+    }
+
+    return LimitParseResult(limit, filePathIndex)
+}
