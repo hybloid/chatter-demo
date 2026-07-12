@@ -1,0 +1,113 @@
+{
+    "version": "0.1.0",
+    "id": "4ad4076f-ac75-47b5-8e5e-ef3d039cda34",
+    "timestamp": "2026-02-18T15:33:00.910696Z",
+    "vcs": {
+        "type": "git",
+        "revision": "f7d25e7a7f27931dd7573fdfbafbd8e16c31b42e",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/test/kotlin/LinesCommandTest.kt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:a9f04649e53305321b575e1d0d3db2158c7758d1",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.56"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 4,
+                            "end_line": 4
+                        },
+                        {
+                            "start_line": 13,
+                            "end_line": 18
+                        },
+                        {
+                            "start_line": 31,
+                            "end_line": 31
+                        },
+                        {
+                            "start_line": 35,
+                            "end_line": 37
+                        },
+                        {
+                            "start_line": 39,
+                            "end_line": 41
+                        },
+                        {
+                            "start_line": 44,
+                            "end_line": 46
+                        },
+                        {
+                            "start_line": 48,
+                            "end_line": 55
+                        },
+                        {
+                            "start_line": 58,
+                            "end_line": 58
+                        },
+                        {
+                            "start_line": 63,
+                            "end_line": 63
+                        },
+                        {
+                            "start_line": 70,
+                            "end_line": 70
+                        },
+                        {
+                            "start_line": 77,
+                            "end_line": 77
+                        },
+                        {
+                            "start_line": 84,
+                            "end_line": 84
+                        },
+                        {
+                            "start_line": 87,
+                            "end_line": 91
+                        },
+                        {
+                            "start_line": 94,
+                            "end_line": 94
+                        },
+                        {
+                            "start_line": 99,
+                            "end_line": 99
+                        },
+                        {
+                            "start_line": 106,
+                            "end_line": 106
+                        },
+                        {
+                            "start_line": 113,
+                            "end_line": 113
+                        },
+                        {
+                            "start_line": 116,
+                            "end_line": 120
+                        },
+                        {
+                            "start_line": 123,
+                            "end_line": 123
+                        },
+                        {
+                            "start_line": 128,
+                            "end_line": 128
+                        },
+                        {
+                            "start_line": 135,
+                            "end_line": 135
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

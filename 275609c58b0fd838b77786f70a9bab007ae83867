@@ -1,0 +1,191 @@
+{
+    "version": "0.1.0",
+    "id": "90978922-ac99-4e90-b5dc-74f8e003a4bc",
+    "timestamp": "2026-02-18T13:07:15.484283Z",
+    "vcs": {
+        "type": "git",
+        "revision": "275609c58b0fd838b77786f70a9bab007ae83867",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "build.gradle.kts",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:ba11d0b6604a250779c329b474735798636ea27a",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:ba11d0b6604a250779c329b474735798636ea27a",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 2
+                        }
+                    ]
+                },
+                {
+                    "url": "git+CLAUDE_CODE:blob:68f8efe604680b0c147f7ea61d404b34cddf8739",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 23,
+                            "end_line": 23
+                        }
+                    ]
+                },
+                {
+                    "url": "git+CLAUDE_CODE:blob:4128a2860ec92ee54aea8e201c09a0016f095f13",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 12,
+                            "end_line": 12
+                        },
+                        {
+                            "start_line": 26,
+                            "end_line": 26
+                        },
+                        {
+                            "start_line": 28,
+                            "end_line": 28
+                        },
+                        {
+                            "start_line": 30,
+                            "end_line": 31
+                        },
+                        {
+                            "start_line": 33,
+                            "end_line": 40
+                        },
+                        {
+                            "start_line": 42,
+                            "end_line": 45
+                        },
+                        {
+                            "start_line": 47,
+                            "end_line": 49
+                        },
+                        {
+                            "start_line": 53,
+                            "end_line": 60
+                        },
+                        {
+                            "start_line": 62,
+                            "end_line": 64
+                        },
+                        {
+                            "start_line": 68,
+                            "end_line": 68
+                        },
+                        {
+                            "start_line": 70,
+                            "end_line": 70
+                        },
+                        {
+                            "start_line": 74,
+                            "end_line": 76
+                        },
+                        {
+                            "start_line": 78,
+                            "end_line": 116
+                        },
+                        {
+                            "start_line": 122,
+                            "end_line": 122
+                        },
+                        {
+                            "start_line": 124,
+                            "end_line": 127
+                        },
+                        {
+                            "start_line": 129,
+                            "end_line": 130
+                        },
+                        {
+                            "start_line": 133,
+                            "end_line": 133
+                        },
+                        {
+                            "start_line": 140,
+                            "end_line": 140
+                        }
+                    ]
+                },
+                {
+                    "url": "git+CLAUDE_CODE:blob:6566cca0eb2dae9bf6874d832296fc785c1c05fc",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 67,
+                            "end_line": 67
+                        },
+                        {
+                            "start_line": 137,
+                            "end_line": 137
+                        },
+                        {
+                            "start_line": 139,
+                            "end_line": 139
+                        },
+                        {
+                            "start_line": 146,
+                            "end_line": 150
+                        }
+                    ]
+                },
+                {
+                    "url": "git+CLAUDE_CODE:blob:f73fcddee8b061867181746bc53ea5dff242e628",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 17,
+                            "end_line": 18
+                        },
+                        {
+                            "start_line": 20,
+                            "end_line": 20
+                        },
+                        {
+                            "start_line": 22,
+                            "end_line": 22
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
