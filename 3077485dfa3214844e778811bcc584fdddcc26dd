@@ -1,0 +1,72 @@
+{
+    "version": "0.1",
+    "id": "36c01eb3-d0c4-48c8-bf6e-8259930709e5",
+    "timestamp": "2026-07-12T21:41:42.976933Z",
+    "vcs": {
+        "type": "git",
+        "revision": "3077485dfa3214844e778811bcc584fdddcc26dd"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 31
+                        },
+                        {
+                            "start_line": 33,
+                            "end_line": 43
+                        },
+                        {
+                            "start_line": 45,
+                            "end_line": 112
+                        },
+                        {
+                            "start_line": 127,
+                            "end_line": 127
+                        }
+                    ]
+                },
+                {
+                    "url": "393a799b-0af4-4477-af39-465219841f93",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 32,
+                            "end_line": 32
+                        },
+                        {
+                            "start_line": 44,
+                            "end_line": 44
+                        },
+                        {
+                            "start_line": 113,
+                            "end_line": 126
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "dev.agent_trace.git": {
+            "previous_revisions": [
+                "84a4ba0d001a6dd6c810974310a45433bf4969d6"
+            ]
+        }
+    }
+}
