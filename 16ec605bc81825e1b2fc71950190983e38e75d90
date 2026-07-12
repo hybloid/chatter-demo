@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "id": "4e90dc80-3b2a-4b23-a5af-26b58af6c159",
+    "timestamp": "2026-02-18T07:01:19.615490Z",
+    "vcs": {
+        "type": "git",
+        "revision": "16ec605bc81825e1b2fc71950190983e38e75d90",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "e2e-test-file.kt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:ccefd8b54335d1e459e014970c55ac3af03111d5",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.1.5"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 6
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
