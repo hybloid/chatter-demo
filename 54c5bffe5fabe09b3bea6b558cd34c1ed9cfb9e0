@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "id": "0b35cdf2-bfdd-493b-8829-617a46e32171",
+    "timestamp": "2026-02-18T21:42:32.384745Z",
+    "vcs": {
+        "type": "git",
+        "revision": "54c5bffe5fabe09b3bea6b558cd34c1ed9cfb9e0",
+        "origin": "github",
+        "repository": "git@github.com:hybloid/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "url": "git+CODEX_CLI:blob:322a4e46a41c3d31a42c0f09d8b9935a0cbcd4e8",
+                    "contributor": {
+                        "type": "ai"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 18,
+                            "end_line": 18
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
