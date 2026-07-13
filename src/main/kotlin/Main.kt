@@ -32,42 +32,9 @@ fun main(args: Array<String>) {
 
     when (command) {
         "lines" -> {
-            var limit: Int? = null
-            var filePathIndex = 1
+            val (limit, filePathIndex) = parseLimitOption(args)
 
-            // Parse --limit parameter
-            if (args.size > 1 && args[1] == "--limit") {
-                if (args.size > 2) {
-                    try {
-                        limit = args[2].toInt()
-                        if (limit <= 0) {
-                            println("Error: Limit must be a positive number")
-                            exitProcess(1)
-                        }
-                        filePathIndex = 3
-                    } catch (e: NumberFormatException) {
-                        println("Error: Invalid limit value. Must be a number.")
-                        exitProcess(1)
-                    }
-                } else {
-                    println("Error: --limit requires a value")
-                    exitProcess(1)
-                }
-            }
-
-            val text = if (args.size > filePathIndex) {
-                // Read from file
-                val filePath = args[filePathIndex]
-                try {
-                    File(filePath).readText()
-                } catch (e: Exception) {
-                    println("Error reading file: ${e.message}")
-                    exitProcess(1)
-                }
-            } else {
-                // Read from stdin
-                generateSequence(::readlnOrNull).joinToString("\n")
-            }
+            val text = readInputText(args, filePathIndex)
 
             val result = countLinesWithLimit(text, limit)
             if (result.exceededLimit) {
@@ -77,42 +44,9 @@ fun main(args: Array<String>) {
             }
         }
         "words" -> {
-            var limit: Int? = null
-            var filePathIndex = 1
-            
-            // Parse --limit parameter
-            if (args.size > 1 && args[1] == "--limit") {
-                if (args.size > 2) {
-                    try {
-                        limit = args[2].toInt()
-                        if (limit <= 0) {
-                            println("Error: Limit must be a positive number")
-                            exitProcess(1)
-                        }
-                        filePathIndex = 3
-                    } catch (e: NumberFormatException) {
-                        println("Error: Invalid limit value. Must be a number.")
-                        exitProcess(1)
-                    }
-                } else {
-                    println("Error: --limit requires a value")
-                    exitProcess(1)
-                }
-            }
-            
-            val text = if (args.size > filePathIndex) {
-                // Read from file
-                val filePath = args[filePathIndex]
-                try {
-                    File(filePath).readText()
-                } catch (e: Exception) {
-                    println("Error reading file: ${e.message}")
-                    exitProcess(1)
-                }
-            } else {
-                // Read from stdin
-                generateSequence(::readlnOrNull).joinToString("\n")
-            }
+            val (limit, filePathIndex) = parseLimitOption(args)
+
+            val text = readInputText(args, filePathIndex)
             
             val result = countWordsWithLimit(text, limit)
             if (result.exceededLimit) {
@@ -153,3 +87,48 @@ val ASCII_RABBIT = """
    ( -.-)
    o_(")(")
 """.trimIndent()
+
+data class LimitOption(val limit: Int?, val filePathIndex: Int)
+
+fun parseLimitOption(args: Array<String>): LimitOption {
+    var limit: Int? = null
+    var filePathIndex = 1
+
+    // Parse --limit parameter
+    if (args.size > 1 && args[1] == "--limit") {
+        if (args.size > 2) {
+            try {
+                limit = args[2].toInt()
+                if (limit <= 0) {
+                    println("Error: Limit must be a positive number")
+                    exitProcess(1)
+                }
+                filePathIndex = 3
+            } catch (e: NumberFormatException) {
+                println("Error: Invalid limit value. Must be a number.")
+                exitProcess(1)
+            }
+        } else {
+            println("Error: --limit requires a value")
+            exitProcess(1)
+        }
+    }
+
+    return LimitOption(limit, filePathIndex)
+}
+
+fun readInputText(args: Array<String>, filePathIndex: Int): String {
+    return if (args.size > filePathIndex) {
+        // Read from file
+        val filePath = args[filePathIndex]
+        try {
+            File(filePath).readText()
+        } catch (e: Exception) {
+            println("Error reading file: ${e.message}")
+            exitProcess(1)
+        }
+    } else {
+        // Read from stdin
+        generateSequence(::readlnOrNull).joinToString("\n")
+    }
+}
