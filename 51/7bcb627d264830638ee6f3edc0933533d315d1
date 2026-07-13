@@ -1,0 +1,2146 @@
+{
+    "version": "0.1",
+    "id": "517bcb627d264830638ee6f3edc0933533d315d1",
+    "timestamp": "1970-01-01T00:00:00Z",
+    "vcs": {
+        "type": "git",
+        "revision": "517bcb627d264830638ee6f3edc0933533d315d1"
+    },
+    "files": [
+        {
+            "path": "pylib/tinydb/__init__.py",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 2,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 4,
+                            "end_line": 6,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 8,
+                            "end_line": 8,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 10,
+                            "end_line": 10,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 12,
+                            "end_line": 21,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 23,
+                            "end_line": 23,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 27,
+                            "end_line": 30,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "url": "11c13f91-979d-4fc7-9d3a-be7fb7836a54",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 32,
+                            "end_line": 32,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 34,
+                            "end_line": 35,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "pylib/tinydb/table.py",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 3,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 6,
+                            "end_line": 16,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 19,
+                            "end_line": 21,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 25,
+                            "end_line": 25,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 28,
+                            "end_line": 28,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 30,
+                            "end_line": 30,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 32,
+                            "end_line": 33,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 36,
+                            "end_line": 38,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 41,
+                            "end_line": 41,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 43,
+                            "end_line": 43,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 45,
+                            "end_line": 45,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 47,
+                            "end_line": 47,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 49,
+                            "end_line": 52,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 54,
+                            "end_line": 56,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 58,
+                            "end_line": 58,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 60,
+                            "end_line": 60,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 62,
+                            "end_line": 69,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 71,
+                            "end_line": 71,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 74,
+                            "end_line": 77,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 80,
+                            "end_line": 80,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 82,
+                            "end_line": 83,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 85,
+                            "end_line": 85,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 87,
+                            "end_line": 88,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 90,
+                            "end_line": 90,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 92,
+                            "end_line": 93,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 95,
+                            "end_line": 95,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 97,
+                            "end_line": 98,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 100,
+                            "end_line": 105,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 108,
+                            "end_line": 108,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 111,
+                            "end_line": 114,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 116,
+                            "end_line": 118,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 120,
+                            "end_line": 124,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 127,
+                            "end_line": 127,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 129,
+                            "end_line": 130,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 132,
+                            "end_line": 132,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 134,
+                            "end_line": 134,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 136,
+                            "end_line": 137,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 139,
+                            "end_line": 139,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 141,
+                            "end_line": 141,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 143,
+                            "end_line": 143,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 145,
+                            "end_line": 145,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 147,
+                            "end_line": 148,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 153,
+                            "end_line": 155,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 157,
+                            "end_line": 160,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 162,
+                            "end_line": 167,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 169,
+                            "end_line": 173,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 175,
+                            "end_line": 178,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 180,
+                            "end_line": 181,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 183,
+                            "end_line": 183,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 185,
+                            "end_line": 185,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 187,
+                            "end_line": 187,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 189,
+                            "end_line": 190,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 192,
+                            "end_line": 192,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 194,
+                            "end_line": 195,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 197,
+                            "end_line": 199,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 201,
+                            "end_line": 206,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 209,
+                            "end_line": 215,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 217,
+                            "end_line": 222,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 224,
+                            "end_line": 225,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 227,
+                            "end_line": 227,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 229,
+                            "end_line": 229,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 231,
+                            "end_line": 231,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 233,
+                            "end_line": 233,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 236,
+                            "end_line": 239,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 241,
+                            "end_line": 241,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 243,
+                            "end_line": 243,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 245,
+                            "end_line": 245,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 247,
+                            "end_line": 248,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 251,
+                            "end_line": 255,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 257,
+                            "end_line": 263,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 266,
+                            "end_line": 266,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 268,
+                            "end_line": 272,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 274,
+                            "end_line": 283,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 285,
+                            "end_line": 285,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 287,
+                            "end_line": 292,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 294,
+                            "end_line": 296,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 298,
+                            "end_line": 298,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 300,
+                            "end_line": 302,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 304,
+                            "end_line": 304,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 306,
+                            "end_line": 306,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 308,
+                            "end_line": 310,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 312,
+                            "end_line": 313,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 315,
+                            "end_line": 316,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 318,
+                            "end_line": 320,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 322,
+                            "end_line": 324,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 326,
+                            "end_line": 330,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 333,
+                            "end_line": 343,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 346,
+                            "end_line": 346,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 348,
+                            "end_line": 348,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 350,
+                            "end_line": 354,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 356,
+                            "end_line": 357,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 359,
+                            "end_line": 359,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 361,
+                            "end_line": 362,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 364,
+                            "end_line": 366,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 368,
+                            "end_line": 370,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 372,
+                            "end_line": 372,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 374,
+                            "end_line": 379,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 381,
+                            "end_line": 381,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 383,
+                            "end_line": 387,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 392,
+                            "end_line": 401,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 403,
+                            "end_line": 405,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 407,
+                            "end_line": 407,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 409,
+                            "end_line": 412,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 414,
+                            "end_line": 415,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 417,
+                            "end_line": 417,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 419,
+                            "end_line": 420,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 422,
+                            "end_line": 423,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 425,
+                            "end_line": 426,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 428,
+                            "end_line": 438,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 440,
+                            "end_line": 441,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 443,
+                            "end_line": 444,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 446,
+                            "end_line": 446,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 448,
+                            "end_line": 449,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 451,
+                            "end_line": 451,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 453,
+                            "end_line": 457,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 459,
+                            "end_line": 460,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 462,
+                            "end_line": 463,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 465,
+                            "end_line": 465,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 467,
+                            "end_line": 470,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 472,
+                            "end_line": 472,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 474,
+                            "end_line": 474,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 476,
+                            "end_line": 476,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 479,
+                            "end_line": 488,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 490,
+                            "end_line": 490,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 492,
+                            "end_line": 493,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 495,
+                            "end_line": 503,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 505,
+                            "end_line": 509,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 511,
+                            "end_line": 512,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 514,
+                            "end_line": 515,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 517,
+                            "end_line": 517,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 519,
+                            "end_line": 519,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 521,
+                            "end_line": 521,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 523,
+                            "end_line": 525,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 527,
+                            "end_line": 530,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 533,
+                            "end_line": 537,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 539,
+                            "end_line": 543,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 545,
+                            "end_line": 550,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 552,
+                            "end_line": 554,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 556,
+                            "end_line": 558,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 560,
+                            "end_line": 564,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 566,
+                            "end_line": 566,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 568,
+                            "end_line": 570,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 575,
+                            "end_line": 583,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 585,
+                            "end_line": 587,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 589,
+                            "end_line": 590,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 592,
+                            "end_line": 592,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 594,
+                            "end_line": 595,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 597,
+                            "end_line": 604,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 606,
+                            "end_line": 614,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 616,
+                            "end_line": 617,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 619,
+                            "end_line": 620,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 622,
+                            "end_line": 622,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 624,
+                            "end_line": 624,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 626,
+                            "end_line": 626,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 628,
+                            "end_line": 628,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 633,
+                            "end_line": 634,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 636,
+                            "end_line": 637,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 639,
+                            "end_line": 639,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 641,
+                            "end_line": 641,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 643,
+                            "end_line": 643,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 646,
+                            "end_line": 646,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 648,
+                            "end_line": 648,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 650,
+                            "end_line": 650,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 653,
+                            "end_line": 653,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 655,
+                            "end_line": 655,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 657,
+                            "end_line": 657,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 660,
+                            "end_line": 660,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 662,
+                            "end_line": 662,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 664,
+                            "end_line": 664,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 666,
+                            "end_line": 666,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 669,
+                            "end_line": 672,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 674,
+                            "end_line": 674,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 676,
+                            "end_line": 676,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 679,
+                            "end_line": 682,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 684,
+                            "end_line": 684,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 686,
+                            "end_line": 687,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 689,
+                            "end_line": 690,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 692,
+                            "end_line": 695,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 697,
+                            "end_line": 697,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 699,
+                            "end_line": 701,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 703,
+                            "end_line": 705,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 707,
+                            "end_line": 707,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 709,
+                            "end_line": 709,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 711,
+                            "end_line": 711,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 713,
+                            "end_line": 715,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 718,
+                            "end_line": 719,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 721,
+                            "end_line": 723,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 725,
+                            "end_line": 730,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 732,
+                            "end_line": 732,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 734,
+                            "end_line": 734,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 736,
+                            "end_line": 736,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 738,
+                            "end_line": 742,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 744,
+                            "end_line": 745,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 748,
+                            "end_line": 748,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 750,
+                            "end_line": 752,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 754,
+                            "end_line": 758,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 760,
+                            "end_line": 766,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 769,
+                            "end_line": 770,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 772,
+                            "end_line": 777,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 780,
+                            "end_line": 781,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 783,
+                            "end_line": 784,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "url": "11c13f91-979d-4fc7-9d3a-be7fb7836a54",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 23,
+                            "end_line": 23,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 151,
+                            "end_line": 151,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 390,
+                            "end_line": 390,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 573,
+                            "end_line": 573,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 631,
+                            "end_line": 631,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "pylib/tinydb/events.py",
+            "conversations": [
+                {
+                    "url": "11c13f91-979d-4fc7-9d3a-be7fb7836a54",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 2,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 4,
+                            "end_line": 5,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 8,
+                            "end_line": 8,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 10,
+                            "end_line": 10,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 12,
+                            "end_line": 12,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 15,
+                            "end_line": 15,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 17,
+                            "end_line": 17,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 19,
+                            "end_line": 19,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 22,
+                            "end_line": 22,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 24,
+                            "end_line": 24,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 26,
+                            "end_line": 30,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "pylib/tinydb/storages.py",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 3,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 6,
+                            "end_line": 11,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 15,
+                            "end_line": 15,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 18,
+                            "end_line": 18,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 20,
+                            "end_line": 20,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 22,
+                            "end_line": 23,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 25,
+                            "end_line": 26,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 28,
+                            "end_line": 30,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 32,
+                            "end_line": 35,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 38,
+                            "end_line": 38,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 40,
+                            "end_line": 40,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 42,
+                            "end_line": 43,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 46,
+                            "end_line": 47,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 49,
+                            "end_line": 50,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 52,
+                            "end_line": 52,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 54,
+                            "end_line": 54,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 56,
+                            "end_line": 56,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 59,
+                            "end_line": 59,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 61,
+                            "end_line": 62,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 64,
+                            "end_line": 64,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 66,
+                            "end_line": 66,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 68,
+                            "end_line": 68,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 71,
+                            "end_line": 71,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 73,
+                            "end_line": 73,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 75,
+                            "end_line": 75,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 78,
+                            "end_line": 78,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 81,
+                            "end_line": 81,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 83,
+                            "end_line": 83,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 86,
+                            "end_line": 86,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 88,
+                            "end_line": 88,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 90,
+                            "end_line": 91,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 93,
+                            "end_line": 94,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 96,
+                            "end_line": 98,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 101,
+                            "end_line": 101,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 103,
+                            "end_line": 104,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 106,
+                            "end_line": 109,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 112,
+                            "end_line": 115,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 117,
+                            "end_line": 118,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 120,
+                            "end_line": 121,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 123,
+                            "end_line": 123,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 126,
+                            "end_line": 129,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 131,
+                            "end_line": 137,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 139,
+                            "end_line": 140,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 142,
+                            "end_line": 142,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 145,
+                            "end_line": 146,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 148,
+                            "end_line": 149,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 151,
+                            "end_line": 155,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 157,
+                            "end_line": 159,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 161,
+                            "end_line": 163,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 166,
+                            "end_line": 166,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 168,
+                            "end_line": 168,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 171,
+                            "end_line": 171,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 173,
+                            "end_line": 173,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 176,
+                            "end_line": 177,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 179,
+                            "end_line": 179,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 181,
+                            "end_line": 181,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 183,
+                            "end_line": 183,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        },
+                        {
+                            "start_line": 185,
+                            "end_line": 185,
+                            "contributor": {
+                                "type": "unknown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "url": "11c13f91-979d-4fc7-9d3a-be7fb7836a54",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 13,
+                            "end_line": 13,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 124,
+                            "end_line": 124,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 143,
+                            "end_line": 143,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 180,
+                            "end_line": 180,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        },
+                        {
+                            "start_line": 184,
+                            "end_line": 184,
+                            "contributor": {
+                                "type": "ai",
+                                "model_id": "claude-opus-4-8"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "dev.agent_trace.git": {
+            "previous_revisions": [
+                "535dc094ac6321abefe96bce353f518cb835acd4",
+                "9f9b932bd1cce4a88719d103d79e3df5e85ccaf1"
+            ]
+        }
+    }
+}
