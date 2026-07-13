@@ -1,0 +1,69 @@
+{
+    "version": "0.1",
+    "id": "989b726e-dfd8-4cf2-b4d8-1f254825050d",
+    "timestamp": "2026-07-13T10:20:35.339184Z",
+    "vcs": {
+        "type": "git",
+        "revision": "4b8702a7d77774335329b316e2ad4415b369d776"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "pylib/tinydb/events.py",
+            "conversations": [
+                {
+                    "url": "fd32733c-9c60-4be9-a62c-2228f7992f24",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 42
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "pylib/tinydb/storages.py",
+            "conversations": [
+                {
+                    "url": "fd32733c-9c60-4be9-a62c-2228f7992f24",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 13,
+                            "end_line": 13
+                        },
+                        {
+                            "start_line": 124,
+                            "end_line": 124
+                        },
+                        {
+                            "start_line": 143,
+                            "end_line": 143
+                        },
+                        {
+                            "start_line": 180,
+                            "end_line": 180
+                        },
+                        {
+                            "start_line": 185,
+                            "end_line": 185
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
