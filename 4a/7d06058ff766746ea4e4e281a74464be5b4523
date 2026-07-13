@@ -1,0 +1,68 @@
+{
+    "version": "0.1",
+    "id": "d02db862-64aa-482a-b5ca-48a4689f11ea",
+    "timestamp": "2026-07-13T10:17:35.809792Z",
+    "vcs": {
+        "type": "git",
+        "revision": "4a7d06058ff766746ea4e4e281a74464be5b4523"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 34
+                        },
+                        {
+                            "start_line": 36,
+                            "end_line": 58
+                        },
+                        {
+                            "start_line": 60,
+                            "end_line": 114
+                        }
+                    ]
+                },
+                {
+                    "url": "4509a95e-8e9e-4106-b3ec-aff787bbe4f1",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 35,
+                            "end_line": 35
+                        },
+                        {
+                            "start_line": 59,
+                            "end_line": 59
+                        },
+                        {
+                            "start_line": 115,
+                            "end_line": 140
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "dev.agent_trace.git": {
+            "previous_revisions": [
+                "90f11944a77afee06302c71e5276b16c7bb45117"
+            ]
+        }
+    }
+}
