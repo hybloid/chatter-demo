@@ -1,0 +1,117 @@
+{
+    "version": "0.1.0",
+    "id": "5c3a6aeb-aff5-4500-82f9-0f2b5dd9e36b",
+    "timestamp": "2026-02-17T10:49:40.604527Z",
+    "vcs": {
+        "type": "git",
+        "revision": "8d02665d317ab7334eb403ee4eed49aa045873a4",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": ".gitignore",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:fe2adde111e2525f92c63603e56a466016b9cb37",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "build.gradle.kts",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:fe2adde111e2525f92c63603e56a466016b9cb37",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 22
+                        },
+                        {
+                            "start_line": 25,
+                            "end_line": 36
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "settings.gradle.kts",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:fe2adde111e2525f92c63603e56a466016b9cb37",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:fe2adde111e2525f92c63603e56a466016b9cb37",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 16
+                        },
+                        {
+                            "start_line": 18,
+                            "end_line": 25
+                        },
+                        {
+                            "start_line": 27,
+                            "end_line": 40
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "test.txt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:fe2adde111e2525f92c63603e56a466016b9cb37",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
