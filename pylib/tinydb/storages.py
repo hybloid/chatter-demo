@@ -10,6 +10,8 @@ import warnings
 from abc import ABC, abstractmethod
 from typing import Dict, Any, Optional
 
+from .events import emit
+
 __all__ = ('Storage', 'JSONStorage', 'MemoryStorage')
 
 
@@ -119,6 +121,8 @@ class JSONStorage(Storage):
         self._handle.close()
 
     def read(self) -> Optional[Dict[str, Dict[str, Any]]]:
+        emit('storage:read', storage=self)
+
         # Get the file size by moving the cursor to the file end and reading
         # its location
         self._handle.seek(0, os.SEEK_END)
@@ -136,6 +140,8 @@ class JSONStorage(Storage):
             return json.load(self._handle)
 
     def write(self, data: Dict[str, Dict[str, Any]]):
+        emit('storage:write', storage=self, data=data)
+
         # Move the cursor to the beginning of the file just in case
         self._handle.seek(0)
 
@@ -171,7 +177,11 @@ class MemoryStorage(Storage):
         self.memory = None
 
     def read(self) -> Optional[Dict[str, Dict[str, Any]]]:
+        emit('storage:read', storage=self)
+
         return self.memory
 
     def write(self, data: Dict[str, Dict[str, Any]]):
+        emit('storage:write', storage=self, data=data)
+
         self.memory = data
