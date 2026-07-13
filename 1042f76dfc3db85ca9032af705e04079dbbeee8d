@@ -1,7 +1,7 @@
 {
     "version": "0.1",
-    "id": "b202287c-a105-48b8-8f61-4f444419a16c",
-    "timestamp": "2026-07-13T10:18:11.868632Z",
+    "id": "ba0fde14-29bf-4509-ab16-72bb6e419eee",
+    "timestamp": "2026-07-13T10:17:58.078954Z",
     "vcs": {
         "type": "git",
         "revision": "1042f76dfc3db85ca9032af705e04079dbbeee8d"
@@ -14,6 +14,29 @@
         {
             "path": "src/main/kotlin/Main.kt",
             "conversations": [
+                {
+                    "contributor": {
+                        "type": "unknown"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 36
+                        },
+                        {
+                            "start_line": 38,
+                            "end_line": 48
+                        },
+                        {
+                            "start_line": 50,
+                            "end_line": 117
+                        },
+                        {
+                            "start_line": 132,
+                            "end_line": 132
+                        }
+                    ]
+                },
                 {
                     "url": "4509a95e-8e9e-4106-b3ec-aff787bbe4f1",
                     "agent": "claude",
@@ -38,5 +61,12 @@
                 }
             ]
         }
-    ]
+    ],
+    "metadata": {
+        "dev.agent_trace.git": {
+            "previous_revisions": [
+                "23eba89e89b90047e2ae12d863e8eaa20d4d889f"
+            ]
+        }
+    }
 }
