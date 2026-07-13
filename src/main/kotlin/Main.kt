@@ -74,7 +74,7 @@ fun main(args: Array<String>) {
         "words" -> {
             var limit: Int? = null
             var filePathIndex = 1
-            
+
             // Parse --limit parameter
             if (args.size > 1 && args[1] == "--limit") {
                 if (args.size > 2) {
@@ -94,7 +94,7 @@ fun main(args: Array<String>) {
                     exitProcess(1)
                 }
             }
-            
+
             val text = if (args.size > filePathIndex) {
                 // Read from file
                 val filePath = args[filePathIndex]
@@ -108,7 +108,7 @@ fun main(args: Array<String>) {
                 // Read from stdin
                 generateSequence(::readlnOrNull).joinToString("\n")
             }
-            
+
             val result = countWordsWithLimit(text, limit)
             if (result.exceededLimit) {
                 println("Words: more than $limit")

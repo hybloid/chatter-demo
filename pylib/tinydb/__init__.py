@@ -28,7 +28,5 @@ from .queries import Query, where
 from .storages import Storage, JSONStorage
 from .database import TinyDB
 from .version import __version__
-from .events import subscribe, emit
 
-__all__ = ('TinyDB', 'Storage', 'JSONStorage', 'Query', 'where',
-           'subscribe', 'emit')
+__all__ = ('TinyDB', 'Storage', 'JSONStorage', 'Query', 'where')
