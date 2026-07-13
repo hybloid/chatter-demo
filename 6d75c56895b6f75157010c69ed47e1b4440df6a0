@@ -1,0 +1,96 @@
+{
+    "version": "0.1.0",
+    "id": "edab94d1-bfc8-459f-95f1-ce343cb0b684",
+    "timestamp": "2026-02-18T13:12:37.341497Z",
+    "vcs": {
+        "type": "git",
+        "revision": "6d75c56895b6f75157010c69ed47e1b4440df6a0",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:6566cca0eb2dae9bf6874d832296fc785c1c05fc",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.0.0"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 27,
+                            "end_line": 27
+                        }
+                    ]
+                },
+                {
+                    "url": "git+CODEX_CLI:blob:d10620b383aaf6166842fb9ac59629fd5fde0fed",
+                    "contributor": {
+                        "type": "ai"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 3,
+                            "end_line": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/kotlin/commands/CountResult.kt",
+            "conversations": [
+                {
+                    "url": "git+CODEX_CLI:blob:d10620b383aaf6166842fb9ac59629fd5fde0fed",
+                    "contributor": {
+                        "type": "ai"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/kotlin/commands/LinesCommand.kt",
+            "conversations": [
+                {
+                    "url": "git+CODEX_CLI:blob:d10620b383aaf6166842fb9ac59629fd5fde0fed",
+                    "contributor": {
+                        "type": "ai"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 47
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "src/main/kotlin/commands/WordsCommand.kt",
+            "conversations": [
+                {
+                    "url": "git+CODEX_CLI:blob:d10620b383aaf6166842fb9ac59629fd5fde0fed",
+                    "contributor": {
+                        "type": "ai"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 49
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

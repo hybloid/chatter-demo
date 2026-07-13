@@ -1,0 +1,14 @@
+{
+    "version": "0.1.0",
+    "id": "148630e7-f1bc-47ae-b72a-e96ec5c26830",
+    "timestamp": "2026-02-18T15:57:08.711029Z",
+    "vcs": {
+        "type": "git",
+        "revision": "121cde26613ec578063f339e0363d93db6c3972d",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": []
+}

@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "id": "92cf0111-3259-4b0b-8de9-903c1cad3e7a",
+    "timestamp": "2026-02-17T18:05:03.076641Z",
+    "vcs": {
+        "type": "git",
+        "revision": "e427226cf595e8fd03d998bb1c3d7a96b356f789",
+        "repository": "ssh://git@git.jetbrains.team/sa/chatter-demo.git"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "dancing_rabbits.txt",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:5f71390fd16fb478b9d82d598d45140b8da93484",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.1.44"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 2,
+                            "end_line": 23
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
