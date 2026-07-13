@@ -1,0 +1,42 @@
+{
+    "version": "0.1",
+    "id": "51f45ddf-d866-4639-92b0-47fdfb015843",
+    "timestamp": "2026-07-12T21:09:24.414226Z",
+    "vcs": {
+        "type": "git",
+        "revision": "f5d99086a67d85f380ddfe34ebeb110a81b980b1"
+    },
+    "tool": {
+        "name": "chatter",
+        "version": "0.1"
+    },
+    "files": [
+        {
+            "path": "src/main/kotlin/Main.kt",
+            "conversations": [
+                {
+                    "url": "d17c9ff2-019a-408b-aaec-134a961074a1",
+                    "agent": "claude",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "claude-opus-4-8"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 32,
+                            "end_line": 32
+                        },
+                        {
+                            "start_line": 44,
+                            "end_line": 44
+                        },
+                        {
+                            "start_line": 113,
+                            "end_line": 126
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

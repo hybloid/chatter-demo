@@ -1,0 +1,34 @@
+{
+    "version": "0.1.0",
+    "id": "505ff459-2234-4d82-8e1a-5d8e6fca751e",
+    "timestamp": "2026-02-18T19:45:30.879936Z",
+    "vcs": {
+        "type": "git",
+        "revision": "71264a74a6fa2bfec74101369641fdefea1085e9",
+        "origin": "github",
+        "repository": "https://github.com/hybloid/chatter-demo"
+    },
+    "tool": {
+        "name": "chatter-cli"
+    },
+    "files": [
+        {
+            "path": "README.md",
+            "conversations": [
+                {
+                    "url": "git+CLAUDE_CODE:blob:103e974a058672cabe2d09c5990c3a4102c92dbc",
+                    "contributor": {
+                        "type": "ai",
+                        "model_id": "2.1.45"
+                    },
+                    "ranges": [
+                        {
+                            "start_line": 1,
+                            "end_line": 14
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
